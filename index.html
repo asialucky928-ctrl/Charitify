@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitify - Charity Website</title>
+
+    <!--font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top orange bar -->
+    <div class="top-bar" id="top">
+        <div class="container top-bar-box">
+            <div class="contact-info">
+                <span><i class="fa-regular fa-envelope"></i> Info@YourDomain.com</span>
+                <span><i class="fa-solid fa-phone"></i> +(333) 052 39876</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--dropdown -->
+    <header class="header">
+        <div class="container header-box">
+            <!-- logo -->
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-hand-holding-dollar logo-icon"></i>
+                <div>
+                    <h2>Charitify</h2>
+                    <p>Your contribution can help a solution.</p>
+                </div>
+            </a>
+        
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <!-- open btn  -->
+            <label for="menu-toggle" class="open-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!-- navbar-->
+            <nav class="navbar">
+                <!--close btn-->
+                <label for="menu-toggle" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#home" class="active">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#home">Home Default</a></li>
+                            <li><a href="#home">Home Modern</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#events">Event</a></li>
+                    <li class="dropdown">
+                        <a href="#volunteers">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#volunteers">Gallery</a></li>
+                            <li><a href="#volunteers">Volunteers</a></li>
+                            <li><a href="#contact">404 Not Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#stories">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#stories">Blog Grid</a></li>
+                            <li><a href="#stories">Blog Left Sidebar</a></li>
+                            <li><a href="#stories">Blog Right Sidebar</a></li>
+                            <li><a href="#stories">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <a href="#causes" class="btn">Donate Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--  hero section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="container hero-text">
+                <h1>Together we<br>can make a Difference</h1>
+                <p>Help today because tomorrow you may be the one who needs helping!<br>
+                    Forget what you can get and see what you can give.</p>
+                <div class="hero-btns">
+                    <a href="#volunteers" class="btn">Join With Us</a>
+                    <a href="#causes" class="btn">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature cards -->
+    <section class="features">
+        <div class="container">
+            <div class="features-box">
+                <div class="feature-card">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Make Donation</h3>
+                    <p>Help today because tomorrow you may be the one who needs helping!</p>
+                    <a href="#causes" class="read-more">Read More</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h3>Fundraising</h3>
+                    <p>Help today because tomorrow you may be the one who needs helping!</p>
+                    <a href="#causes" class="read-more">Read More</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h3>Become A Volunteer</h3>
+                    <p>Help today because tomorrow you may be the one who needs helping!</p>
+                    <a href="#volunteers" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  causes section -->
+    <section class="causes" id="causes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent Causes</h2>
+                <div class="line"></div>
+                <p>Help today because tomorrow you may be the one who needs more helping!</p>
+            </div>
+
+            <div class="causes-grid">
+                <div class="cause-card">
+                    <div class="cause-img">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+                            alt="Charity Activity">
+                        <a href="#causes" class="btn btn-small">Donate Now +</a>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 25%;"><span>25%</span></div>
+                        </div>
+                    </div>
+                    <div class="cause-info">
+                        <h3>First charity activity of this summer.</h3>
+                        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                        <div class="goal-box">
+                            <span><i class="fa-solid fa-chart-simple"></i> Goal: $45000</span>
+                            <span><i class="fa-regular fa-thumbs-up"></i> Raised: $5000</span>
+                        </div>
+                        <a href="#causes" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="cause-card">
+                    <div class="cause-img">
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80"
+                            alt="Build School">
+                        <a href="#causes" class="btn btn-small">Donate Now +</a>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;"><span>45%</span></div>
+                        </div>
+                    </div>
+                    <div class="cause-info">
+                        <h3>Big charity: build school for poor children.</h3>
+                        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                        <div class="goal-box">
+                            <span><i class="fa-solid fa-chart-simple"></i> Goal: $45000</span>
+                            <span><i class="fa-regular fa-thumbs-up"></i> Raised: $5000</span>
+                        </div>
+                        <a href="#causes" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="cause-card">
+                    <div class="cause-img">
+                        <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800&q=80"
+                            alt="Clean Water">
+                        <a href="#causes" class="btn btn-small">Donate Now +</a>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"><span>75%</span></div>
+                        </div>
+                    </div>
+                    <div class="cause-info">
+                        <h3>Building clean-water system for rural poor.</h3>
+                        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                        <div class="goal-box">
+                            <span><i class="fa-solid fa-chart-simple"></i> Goal: $45000</span>
+                            <span><i class="fa-regular fa-thumbs-up"></i> Raised: $5000</span>
+                        </div>
+                        <a href="#causes" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="founder-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                        alt="Jonathan Smith" class="founder-img">
+                    <h3>Jonathan Smith</h3>
+                    <small>CEO &amp; Founder of Charitify.</small>
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+                </div>
+
+                <div class="about-card">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80"
+                        alt="Our History">
+                    <div class="about-card-body">
+                        <h3>Our History</h3>
+                        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can
+                            make in the lives of the poor.</p>
+                        <a href="#about" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <img src="https://images.unsplash.com/photo-1509099652299-30938b0aeb63?auto=format&fit=crop&w=800&q=80"
+                        alt="Our Mission">
+                    <div class="about-card-body">
+                        <h3>Our Mission</h3>
+                        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can
+                            make in the lives of the poor.</p>
+                        <a href="#about" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- campaigns section -->
+    <section class="campaigns" id="campaigns">
+        <div class="campaign-overlay">
+            <div class="container campaign-box">
+                <div class="campaign-text">
+                    <span class="badge">Featured Campaigns</span>
+                    <h2>Featured project to build a School.</h2>
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+
+                    <div class="campaign-bar">
+                        <div class="campaign-progress" style="width: 35%;">
+                            <span>35%</span>
+                        </div>
+                    </div>
+
+                    <div class="campaign-stats">
+                        <span><i class="fa-solid fa-chart-simple"></i> Goal: $450000</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> Raised: $55000</span>
+                    </div>
+
+                    <a href="#causes" class="btn">Donate Now</a>
+                </div>
+
+                <div class="campaign-video">
+                    <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=900&q=80"
+                        alt="Campaign Video">
+                    <a href="#campaigns" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  volunteers section -->
+    <section class="volunteers" id="volunteers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Volunteers</h2>
+                <div class="line"></div>
+                <p>Help today because tomorrow you may be the one who needs more helping!</p>
+            </div>
+
+            <div class="volunteers-layout">
+                <!--  volunteer cards -->
+                <div class="volunteer-grid">
+                    <div class="volunteer-card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80"
+                            alt="Volunteer 1">
+                        <div class="volunteer-overlay">
+                            <h4>Jonathan Smith</h4>
+                            <span>Marketer</span>
+                        </div>
+                    </div>
+                    <div class="volunteer-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80"
+                            alt="Volunteer 2">
+                        <div class="volunteer-overlay">
+                            <h4>Angelina Rose</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                    <div class="volunteer-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80"
+                            alt="Volunteer 3">
+                        <div class="volunteer-overlay">
+                            <h4>Taylor Swift</h4>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                    <div class="volunteer-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                            alt="Volunteer 4">
+                        <div class="volunteer-overlay">
+                            <h4>Michel Brown</h4>
+                            <span>Communicator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- volunteer info -->
+                <div class="volunteer-info">
+                    <h3>Become a Volunteer?</h3>
+                    <h4>Join your hand with us for a better life and beautiful future.</h4>
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check"></i> We are friendly to each other.</li>
+                        <li><i class="fa-solid fa-check"></i> If you join with us, We will give you free training.</li>
+                        <li><i class="fa-solid fa-check"></i> Its an opportunity to help poor children.</li>
+                        <li><i class="fa-solid fa-check"></i> No goal requirements.</li>
+                        <li><i class="fa-solid fa-check"></i> Joining is totally free. We don't need any money from you.
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="btn">Join With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- stats counter banner -->
+    <section class="stats-banner">
+        <div class="stats-overlay">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>85389</h3>
+                    <p>Money Donated</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <h3>10693</h3>
+                    <p>Volunteer Around The World</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-regular fa-user"></i>
+                    <h3>50177</h3>
+                    <p>People Impacted</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-regular fa-comments"></i>
+                    <h3>669</h3>
+                    <p>Positive Feedbacks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- upcoming events section -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Events</h2>
+                <div class="line"></div>
+                <p>Help today because tomorrow you may be the one who needs more helping!</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- event card 1 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80"
+                            alt="Event 1">
+                    </div>
+                    <div class="event-body">
+                        <h3>Let's talk about the poor children.</h3>
+                        <p class="event-meta"><i class="fa-regular fa-calendar"></i> STARTED ON: 12:00 PM.</p>
+                        <p class="event-meta"><i class="fa-solid fa-location-dot"></i> GRAND MAHAL, DUBAI 2100.</p>
+                        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                        <a href="#events" class="btn btn-small">Read More</a>
+                    </div>
+                </div>
+
+                <!--  card 2 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=700&q=80"
+                            alt="Event 2">
+                    </div>
+                    <div class="event-body">
+                        <h3>Insure clean water to everyone in Africa.</h3>
+                        <p class="event-meta"><i class="fa-regular fa-calendar"></i> STARTED ON: 12:00 PM.</p>
+                        <p class="event-meta"><i class="fa-solid fa-location-dot"></i> GRAND MAHAL, DUBAI 2100.</p>
+                        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                        <a href="#events" class="btn btn-small">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What People Say</h2>
+                <div class="line"></div>
+                <p>Help today because tomorrow you may be the one who needs more helping!</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80"
+                            alt="Jonathan Smith">
+                        <div>
+                            <h4>Jonathan Smith</h4>
+                            <span>Marketer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+                            alt="Angelina Rose">
+                        <div>
+                            <h4>Angelina Rose</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
+                        in the lives of the poor, the abused and the helpless.</p>
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+                            alt="Taylor Swift">
+                        <div>
+                            <h4>Taylor Swift</h4>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active-dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!--  stories section -->
+    <section class="stories" id="stories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent Stories</h2>
+                <div class="line"></div>
+                <p>Help today because tomorrow you may be the one who needs more helping!</p>
+            </div>
+
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+                            alt="Story 1">
+                    </div>
+                    <div class="story-body">
+                        <span class="story-date"><i class="fa-regular fa-clock"></i> January 01, 2021</span>
+                        <h3>The History of Donation Told</h3>
+                        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can
+                            make in the lives of the poor, the abused and the helpless.</p>
+                        <a href="#stories" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+                            alt="Story 2">
+                    </div>
+                    <div class="story-body">
+                        <span class="story-date"><i class="fa-regular fa-clock"></i> January 01, 2021</span>
+                        <h3>Help the Community</h3>
+                        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can
+                            make in the lives of the poor, the abused and the helpless.</p>
+                        <a href="#stories" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800&q=80"
+                            alt="Story 3">
+                    </div>
+                    <div class="story-body">
+                        <span class="story-date"><i class="fa-regular fa-clock"></i> January 01, 2021</span>
+                        <h3>Charity Ever Rule the World?</h3>
+                        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can
+                            make in the lives of the poor, the abused and the helpless.</p>
+                        <a href="#stories" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13.  footer section -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <!-- column 1 -->
+            <div class="footer-col">
+                <a href="#home" class="logo footer-logo">
+                    <i class="fa-solid fa-hand-holding-dollar logo-icon"></i>
+                    <div>
+                        <h2>Charitify</h2>
+                        <p>Your contribution can help a solution.</p>
+                    </div>
+                </a>
+                <p class="footer-desc">
+                    The secret to happiness lies in helping others. Never underestimate the difference YOU can make in
+                    the lives of the poor
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- column 2 -->
+            <div class="footer-col">
+                <h3>Recent Campaigns</h3>
+                <ul class="footer-list">
+                    <li><a href="#causes">First charity activity of this summer. -1 Year Ago</a></li>
+                    <li><a href="#causes">Big charity: build school for poor children. -2 Year Ago</a></li>
+                    <li><a href="#causes">Clean-water system for rural poor. -2 Year Ago</a></li>
+                    <li><a href="#causes">Nepal earthquake donation campaigns. -3 Year Ago</a></li>
+                </ul>
+            </div>
+
+            <!-- column 3 -->
+            <div class="footer-col">
+                <h3>Charitify Location</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-regular fa-envelope"></i> Info@YourDomain.com</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> +(333) 052 39876</li>
+                    <li><i class="fa-solid fa-globe"></i> Www.YourWebsite.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 60 Grand Avenue. Central New Road 0708, USA</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--  copyright bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-box">
+                <p>&copy; 2026 Charitify. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Orders</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Report Problem</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll  top button -->
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</body>
+
+</html>
